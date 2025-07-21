@@ -1,6 +1,6 @@
 # 📝 Smart To-Do App
 
-A beautifully designed and fully functional to-do application built with **HTML**, **CSS**, and **JavaScript**. This project goes beyond basic task tracking, offering features like task prioritization, due dates, tags, dark mode, live filtering, search, keyboard shortcuts, and persistent storage using `localStorage`.
+This is a fully functional and responsive To-Do List web application built using HTML, CSS, and JavaScript. It allows users to manage tasks efficiently with enhanced features like priority tagging, due dates, dark mode, filtering, searching, and localStorage support.
 
 ---
 
@@ -13,18 +13,27 @@ A beautifully designed and fully functional to-do application built with **HTML*
 
 ## 📌 Features
 
-✅ Add, edit, and delete tasks  
-✅ Assign priority levels (High, Medium, Low)  
-✅ Set due dates and tag tasks  
-✅ Filter tasks by status (All, Active, Completed)  
-✅ Search tasks by keyword  
-✅ Sort tasks by priority  
-✅ Toggle light/dark mode  
-✅ Real-time summary: total, active, and completed tasks  
-✅ Persistent data with `localStorage`  
-✅ Mobile-responsive design 
-✅ Light/dark Mode
-✅ Elegant and intuitive user interface
+📝 Add, edit, and delete tasks
+
+📅 Set due dates for each task
+
+🏷️ Add custom tags (e.g. Work, Personal)
+
+🔴 Priority levels: Low, Medium, High
+
+🎯 Filter tasks by status: All, Pending, Completed
+
+🔍 Live search functionality
+
+🌓 Toggle between light and dark themes
+
+🔃 Sort tasks by priority (ascending/descending)
+
+💾 Data persistence with localStorage
+
+⌨️ Keyboard shortcut: Enter to input task
+
+📱 Fully responsive for mobile and desktop screens
 
 ---
 
