@@ -22,7 +22,8 @@ A beautifully designed and fully functional to-do application built with **HTML*
 ✅ Toggle light/dark mode  
 ✅ Real-time summary: total, active, and completed tasks  
 ✅ Persistent data with `localStorage`  
-✅ Mobile-responsive design    
+✅ Mobile-responsive design 
+✅ Light/dark Mode
 ✅ Elegant and intuitive user interface
 
 ---
