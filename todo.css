@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  padding: 20px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+body.dark {
+  background: #1e1e1e;
+  color: #fff;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+body.dark .container {
+  background: #2c2c2c;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#theme-toggle {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.input-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-section input,
+.input-section select,
+.input-section button {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  flex: 1;
+}
+
+.input-section input {
+  flex: 2;
+}
+
+.input-section button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#searchInput {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-buttons button {
+  padding: 8px 16px;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.filter-buttons button.active {
+  background: #007bff;
+  color: white;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
+  gap: 10px;
+}
+
+body.dark .task-item {
+  background: #3b3b3b;
+}
+
+.task-text {
+  flex: 2;
+  cursor: pointer;
+}
+
+.task-item.completed .task-text {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.priority-label {
+  font-size: 14px;
+}
+
+.priority-low .priority-label { color: green; }
+.priority-medium .priority-label { color: orange; }
+.priority-high .priority-label { color: red; }
+
+.due-date, .tags {
+  font-size: 13px;
+  color: #666;
+}
+
+body.dark .due-date, body.dark .tags {
+  color: #ccc;
+}
+
+.task-item button {
+  margin-left: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.edit-btn { color: orange; }
+.remove-btn { color: red; }
+
+.summary {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+body.dark .summary {
+  color: #ccc;
+}
+
+@media (max-width: 500px) {
+  .input-section, .filter-buttons, .task-item {
+    flex-direction: column;
+  }
+}
